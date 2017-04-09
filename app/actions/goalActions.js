@@ -29,13 +29,6 @@ export function removeGoal(id) {
   };
 }
 
-export function toggleGoal(id) {
-  return {
-    type: actions.TOGGLE_GOAL,
-    id: id
-  };
-}
-
 export function removeAllGoals() {
   return {
     type: actions.REMOVE_ALL_GOALS,

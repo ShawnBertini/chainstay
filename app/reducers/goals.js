@@ -29,17 +29,6 @@ export default function goals (goals = [], action = {}) {
       });
       return newGoalList;
 
-    case actions.TOGGLE_GOAL:
-      return goals.map( (goal) => {
-        if ( goal.id === action.id ) {
-          AsyncStorage.mergeItem('goal:'+action.goalid,{completed: !action.goal.completed});
-          return Object.assign({}, goal, {
-            completed: !goal.completed
-          })
-        }
-        return goal;
-      });
-
     case actions.REMOVE_ALL_GOALS:
       return [];
 
