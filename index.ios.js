@@ -1,53 +1,41 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   AppRegistry,
+  AsyncStorage,
   StyleSheet,
   Text,
   View
 } from 'react-native';
+import {createStore, combineReducers} from 'redux';
+import session from './app/reducers/session'
+import goals from './app/reducers/goals'
+import * as sessionActions from './app/actions/sessionActions';
+import * as goalActions from './app/actions/goalActions';
+import App from './app/App'
+import {Provider} from 'react-redux'
 
-export default class chainstay extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
-  }
+const initialState = {
+  goals: [],
+  session: null
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+let store = createStore(combineReducers({goals: goals, session: session}), initialState );
 
-AppRegistry.registerComponent('chainstay', () => chainstay);
+// log state upon change
+let unsubscribe = store.subscribe(() =>
+  console.log(store.getState())
+)
+
+export default class Chainstay extends Component {
+
+  render() {
+    return (
+      <Provider store={store}>
+        <App/>
+      </Provider>
+    );
+  }
+
+}
+
+AppRegistry.registerComponent('chainstay', () => Chainstay);

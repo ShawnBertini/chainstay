@@ -20,11 +20,8 @@ export default class chainstay extends Component {
           Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
+          Chainstay will be ported to andoid shortly, but there are a few iOS
+          only components in play at this time.  Sorry.
         </Text>
       </View>
     );
