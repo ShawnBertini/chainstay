@@ -7,17 +7,24 @@ In case you didn't know, a chainstay is a part of a bicycle frame, or in the cas
 
 As of this writing, just the basic iOS functionality is in place, but updates are coming soon.  So, please watch the project, or check back soon.
 
-In the meantime, here's an overview of what's in place and
-a bit about what's coming:
+### For the impatient
+You can download and run the sample with the following commands:
+```
+git clone https://github.com/ShawnBertini/chainstay.git
+cd chainstay
+npm install
+react-native run-ios
+## android coming soon
+```
 
-### Basic Application Flow
-When the application launches, it uses AsyncStorage to load previously saved user settings.  While the load is pending, a LoadingScene is shown.  Once the load is complete, based on the previous settings, the user is directed to a login screen or the main application view.
+### If you want to know what you're getting...
+When the application launches, it uses AsyncStorage to load previously saved user settings.  While the load is pending, a LoadingScene is shown.  Once the load is complete, based on the previous status, the user is directed to a login screen or the main application view.
 
-You can log on with an empty username and password to start.  Once in the man view, you can manage a list of goals (tired of TODOs) and personal preferences.
+You can log on with an empty username and password to start.  Once in the main view, you can manage a list of goals (tired of TODOs) and personal preferences.
 
-The focus is on creating a simple template for navigation, a multi-part redux state tree and proper use of AsyncStorage.
+The focus is on creating a super simple template for navigation, a multi-part redux state tree and proper use of AsyncStorage (which is a great demonstration of async operations in general).
 
-Styling and cleanup are on the way, but the code is purposefully minimal and would likely be of help today to anyone starting off with react native.
+Styling and cleanup are on the way, but the code is purposefully minimal and would be of help today to anyone starting off with react native.
 
 ### Libraries of Interest
 This sample purposefully limits the number of included libraries.  Here are a few that seemed worth pulling along (links coming):
