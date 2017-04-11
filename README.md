@@ -17,7 +17,7 @@ react-native run-ios
 ## android coming soon
 ```
 
-### If you want to know what you're getting...
+### What you're getting...
 When the application launches, it uses AsyncStorage to load previously saved user settings.  While the load is pending, a LoadingScene is shown.  Once the load is complete, based on the previous status, the user is directed to a login screen or the main application view.
 
 You can log on with an empty username and password to start.  Once in the main view, you can manage a list of goals (tired of TODOs) and personal preferences.
