@@ -1,9 +1,8 @@
 'use strict';
 
 import {AsyncStorage} from 'react-native';
-import * as actions from '../actions/actionTypes';
 import shortid from 'shortid';
-//import _ from 'lodash';
+import * as actions from '../actions/ActionTypes';
 
 export default function goals (goals = [], action = {}) {
 

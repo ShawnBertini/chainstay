@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import {AlertIOS,AsyncStorage,Button,Image,View,Text,ListView,NavigatorIOS,StyleSheet,TouchableHighlight,TouchableOpacity} from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons';
 import { connect } from 'react-redux'
-import * as goalActions from '../actions/goalActions'
-import AddGoalScene from './addGoalScene'
+import * as goalActions from '../actions/GoalActions'
+import AddGoalScene from './AddGoalScene'
 
 const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 

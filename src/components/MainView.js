@@ -1,11 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import { AppRegistry, NavigatorIOS, View, TabBarIOS, Text, TouchableHighlight, StatusBar, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import GoalListScene from './goalListScene'
-import SettingsScene from './settingsScene'
-import TodayScene from './todayScene'
-import AddGoalScene from './addGoalScene'
-import LoginScene from './loginScene'
+import GoalListScene from './GoalListScene'
+import SettingsScene from './SettingsScene'
+import AddGoalScene from './AddGoalScene'
+import LoginScene from './LoginScene'
 
 export default class MainView extends Component {
 

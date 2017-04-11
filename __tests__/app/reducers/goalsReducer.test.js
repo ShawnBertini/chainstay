@@ -1,8 +1,8 @@
 'use strict';
 
-import * as actions from '/app/actions/goalActions';
-import goalsReducer from '/app/reducers/goals'
 import deepFreeze from 'deep-freeze'
+import * as actions from '/app/actions/GoalActions';
+import goalsReducer from '/app/reducers/Goals'
 
 test( 'TEST ADD FIRST GOAL', () => {
   const startState = [];

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Button, StyleSheet,Text,TextInput, TouchableHighlight, TouchableOpacity, View} from 'react-native'
 import { connect } from 'react-redux'
-import * as goalActions from '../actions/goalActions'
+import * as goalActions from '../actions/GoalActions'
 
 class EditGoalScene extends Component {
 

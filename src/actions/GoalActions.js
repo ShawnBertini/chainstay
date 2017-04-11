@@ -1,4 +1,4 @@
-import * as actions from './actionTypes';
+import * as actions from './ActionTypes';
 //import _ from 'lodash';
 
 export function addGoal(goal) {

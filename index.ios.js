@@ -7,12 +7,13 @@ import {
   View
 } from 'react-native';
 import {createStore, combineReducers} from 'redux';
-import session from './app/reducers/session'
-import goals from './app/reducers/goals'
-import * as sessionActions from './app/actions/sessionActions';
-import * as goalActions from './app/actions/goalActions';
-import App from './app/App'
 import {Provider} from 'react-redux'
+
+import session from './src/reducers/Session'
+import goals from './src/reducers/Goals'
+import * as sessionActions from './src/actions/SessionActions';
+import * as goalActions from './src/actions/GoalActions';
+import App from './src/App'
 
 const initialState = {
   goals: [],

@@ -1,7 +1,7 @@
 'use strict';
 
-import * as actions from '../actions/actionTypes';
 import {AsyncStorage} from 'react-native'
+import * as actions from '../actions/ActionTypes';
 
 export default function session (user = {isLoggedIn:false}, action = {}) {
 

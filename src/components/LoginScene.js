@@ -4,7 +4,7 @@ import { AsyncStorage, Button, Image, Text, TextInput, TouchableOpacity, View } 
 import Dimensions from 'Dimensions';
 import Icon from 'react-native-vector-icons/Ionicons';
 import * as actions from '../actions';
-import s from './ChainstayStyles.js';
+import s from '../ChainstayStyles.js';
 
 class LoginScene extends Component {
   state = { email: '', password: '', error: '', loading: false };

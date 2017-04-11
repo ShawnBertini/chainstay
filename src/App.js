@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {AsyncStorage,Image,View,Text,ListView,StyleSheet,TouchableHighlight,NavigatorIOS} from 'react-native'
 import { connect } from 'react-redux'
-import * as goalActions from './actions/goalActions'
-import * as sessionActions from './actions/sessionActions'
-import LoginScene from './components/loginScene'
-import LoadingScene from './components/loadingScene'
+import * as goalActions from './actions/GoalActions'
+import * as sessionActions from './actions/SessionActions'
+import LoginScene from './components/LoginScene'
+import LoadingScene from './components/LoadingScene'
 import MainView from './components/MainView'
 
 //
