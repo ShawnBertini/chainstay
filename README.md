@@ -8,7 +8,7 @@ In case you didn't know, a chainstay is a part of a bicycle frame, or in the cas
 As of this writing, just the basic iOS functionality is in place, but updates are coming soon.  So, please watch the project, or check back soon.
 
 ### For the impatient
-You can download and run the sample with the following commands:
+If you've gone through the [React Native Setup](https://facebook.github.io/react-native/docs/getting-started.html), then you can download and run the sample with the following commands:
 ```
 git clone https://github.com/ShawnBertini/chainstay.git
 cd chainstay
