@@ -144,6 +144,8 @@ class SettingsScene extends Component {
            <Text style={styles.labelStyle}>Email</Text>
            <TextInput style={styles.inputStyle}
              placeholder="user@gmail.com"
+             autoCapitalize = 'none'
+             keyboardType = 'email-address'
              value={this.state.email}
              onChangeText={email => this.setState({ email: email })}
            />
@@ -153,6 +155,7 @@ class SettingsScene extends Component {
            <Text style={styles.labelStyle}>Nickname</Text>
            <TextInput style={styles.inputStyle}
              placeholder="superstar"
+             autoCapitalize = 'none'
              value={this.state.nickname}
              onChangeText={nickname => this.setState({ nickname: nickname })}
            />
@@ -162,6 +165,7 @@ class SettingsScene extends Component {
            <Text style={styles.labelStyle}>Full Name</Text>
            <TextInput style={styles.inputStyle}
              placeholder="Jane Doe"
+             autoCapitalize = 'none'
              value={this.state.fullname}
              onChangeText={fullname => this.setState({ fullname: fullname })}
            />

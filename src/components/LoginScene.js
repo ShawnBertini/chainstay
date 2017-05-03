@@ -88,6 +88,8 @@ class LoginScene extends Component {
               <Icon name="ios-person-outline" size={30} color="#000000" />
               <TextInput style={s.textInputStyle}
                 placeholder="user@gmail.com"
+                autoCapitalize = 'none'
+                keyboardType = 'email-address'
                 label="Email"
                 value={this.state.email}
                 onChangeText={email => this.setState({ email })}
@@ -133,9 +135,9 @@ const styles = {
     marginTop: 100,
   },
   errorTextStyle: {
-    fontSize: 20,
+    fontSize: 18,
     alignSelf: 'center',
-    color: 'white',
+    color: 'red',
     backgroundColor: 'transparent'
   },
   bg: {
