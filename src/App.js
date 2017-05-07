@@ -40,7 +40,8 @@ class App extends Component {
     AsyncStorage.getItem( 'user', (error,userJSON) => {
       if (error) {console.warn(error);return;}  //TODO: handle better
       if (userJSON == null || userJSON == '') {
-        this.props.dispatch( sessionActions.loginComplete({email:'',password:'',isLoggedIn:false,newUser:true}));
+        this.props.dispatch( sessionActions.userLoaded({email:'',password:'',isLoggedIn:false,newUser:true}));
+        return;
       }
       this.props.dispatch( sessionActions.userLoaded(JSON.parse(userJSON)));
       // this.props.dispatch( sessionActions.loginComplete( {name:'joe schmoe'} ))
@@ -53,7 +54,7 @@ class App extends Component {
     const { session } = this.props;
 
     if ( session == null ) {
-      return <LoadingScene/>;
+      return <LoadingScene/>;  // TODO: force switch to login after deleting 'user'
     }
     if ( session.isLoggedIn ) {
       return <MainView/>;

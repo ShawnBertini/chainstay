@@ -19,7 +19,7 @@ export default function session (user = {isLoggedIn:false}, action = {}) {
       return user;
 
     case actions.USER_REMOVED:
-      return null;
+      return {email:'',password:'',isLoggedIn:false,newUser:true};
 
     default:
       return user;

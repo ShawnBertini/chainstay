@@ -116,12 +116,12 @@ class SettingsScene extends Component {
        {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
        {text: 'Remove All', onPress: () => {console.log('Remove Acct Pressed');
 
-           AsyncStorage.removeItem(this.props.user.id,(err) => {
+           AsyncStorage.removeItem('user',(err) => {
              if ( err ) {
                console.log(err); // TODO: expose full errors:[Error]
              } else {
                AlertIOS.alert('Account removed.');
-               this.props.dispatch(actions.accountRemoved())
+               this.props.dispatch(actions.userRemoved())
              }
            })
         }},
